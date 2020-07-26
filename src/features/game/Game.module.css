@@ -1,0 +1,32 @@
+.gamelist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    border-radius: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    height: 200px;
+    width: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .img:hover {
+      animation: Game-logo-float infinite 1s ease-in-out;
+    }
+}
+
+
+@keyframes Game-logo-float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
+}
